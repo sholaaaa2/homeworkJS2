@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+
+alert('Задание1. Перепишите if с использованием оператора "?"')
+var a = +prompt('Введите число "a"');
+var b = +prompt('Введите число "b"');
+var result;
+a + b < 4 ? result = 'Мало':result = 'Много';
+alert(result);
+
+
+alert('Задание2. Перепишите if..else с использованием нескольких операторов "?"')
+var massage;
+var login = prompt('Введите логин', 'Вася, Директор');
+login=='Вася'? massage='Привет': login=='Директор'? massage='Здравствуйте': login==''? massage='Нет логина': massage=''
+alert(massage);
+
+// Сума
+document.write('Задание3.1. Выведете на экран суму всех чисел, разположеных в числовом промежутке между А и B'+'<br>');
+alert('Задание3.1. Выведете на экран суму всех чисел, разположеных в числовом промежутке между А и B')
+    var a=prompt('Введите число "A"'), b=prompt('Введите число "B"'), sum=0;
+    for (var i = a; i < b-1; i++) {
+      sum+= ++a
+    }
+    document.write(sum + "<br>"+'<hr>');
+
+
+// Нечет
+document.write('Задание3.2. Выведете на экран все нечетные значения, разположеных в числовом промежутке между А и B'+'<br>')
+alert('Задание3.2. Выведете на экран все нечетные значения, разположеных в числовом промежутке между А и B')
+    var a=prompt('Введите число "A"'), b=prompt('Введите число "B"');
+    for (var i = a; i <= b; i++) {
+      if (a%2!=0) {
+        document.write(a + ' '+' ')
+        ++a;
+      }
+      else {
+        document.write(' ')
+        ++a;
+      }
+    }
+      document.write("<br>"+'<hr>');
+
+
+
+// ПРямоугольник
+document.write('Задание-4: Геометрические фигуры с использованием пробелов и звездочек '+'<br>'+'Прямоугольник'+'<br>')
+    for (var i = 4; i < 10; i++) {
+        for (var j = 3; j < 10; j++) {
+            document.write("*"+" ");
+        }
+        document.write("<br>");
+    }
+document.write("<br>"+'<hr>');
+
+
+// ПРям Триугольник
+document.write('Прямоугольный треугольник'+'<br>')
+    for (var i = 0; i < 6; i++) {
+      for (var j = 0; j < i; j++) {
+        document.write("*"+"&nbsp")
+      }
+      document.write("<br>");
+    }
+document.write("<br>"+'<hr>');
+
+// Триугольник
+document.write('Равносторонний треугольник'+'<br>')
+    for (var i = 0; i < 7; i++) {
+      for (var j = 8; j > i; j--) {
+        document.write("&nbsp"+"&nbsp")
+      }
+      for (var j = 0; j < i; j++) {
+        document.write("*"+"&nbsp"+"&nbsp")
+      }
+      document.write("<br>");
+    }
+document.write("<br>"+'<hr>');
+
+
+// Ромб
+document.write('Ромб'+'<br>')
+    for (var i = 0; i < 8; i++) {
+      for (var j = 8; j > i; j--) {
+        document.write("&nbsp"+"&nbsp")
+      }
+      for (var k = 0; k < i; k++) {
+        document.write("*"+"&nbsp"+"&nbsp")
+      }
+      document.write("<br>");
+    }
+
+    for (var i = 0; i < 8; i++) {
+      for (var j = -2; j < i; j++) {
+        document.write("&nbsp"+"&nbsp")
+      }
+      for (var k = 6; k > i; k--) {
+        document.write("*"+"&nbsp"+"&nbsp")
+      }
+      document.write("<br>");
+    }
+    document.write("<br>"+'<hr>');
+  </script>
+</body>
+</html>
